@@ -4,7 +4,9 @@
 ```
 import sqlite3
 con = sqlite3.connect(path)
-cur = con.cursor()```
+cur = con.cursor()
+
+```
 
 ## pass your queries
 
@@ -16,14 +18,15 @@ r.fetchall()
 con.close()
 ```
 
-### select all rows where columns == 1
+### select all rows where columns = 1
+
 
 ```
 cur.execute("select * from table where x=:year", {"year": 1})
 print(cur.fetchall())
 ```
 
-### select n last rows where columns == 1
+### select n last rows where columns = 1
 
 ```
 
